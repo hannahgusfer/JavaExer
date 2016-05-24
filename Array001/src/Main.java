@@ -1,4 +1,4 @@
-
+ 
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,6 +13,8 @@ public class Main {
 		 * Mostre o valor do décimo terceiro e do vigésimo quinto número do vetor.
 		 */
 		
+		System.out.println(numeros[12]);
+		System.out.println(numeros[24]);
 		
 		/*
 		 * Mostre o valor do maior e menor número do vetor.
