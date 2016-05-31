@@ -31,9 +31,14 @@ public class Main {
 			String nomeInv = "";
 			
 			for (int j = 0; j < matriz[0].length; j++) {
+				nome += matriz[i][j];
+				nomeInv += matriz [i][3-j];
+			}
 			
-			nome += matriz[i][j];
-			nomeInv += matriz [i][matriz.length-j-1];
+			if (nome.equals(nomeInv)){
+			
+				System.out.println(nome);
+			}
 				
 				
 			}
@@ -51,6 +56,6 @@ public class Main {
 		
 		
 
-	}
+	
 
 }
