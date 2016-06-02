@@ -30,7 +30,16 @@ public class Main {
 		 * final.
 		 */
 		
+		for (int i = 0; i < notas.length; i++) {
+		
+		Double ex = notas[i][0] + notas[i][1]+ notas[i][2]+ notas[i][3]+ notas[i][4]+ notas[i][5];
+		Double exFinal = (ex * 10)/6;
+		Double notaProva = notas[i][6];
+		Double notaParcial = (exFinal * 0.4) + (notaProva * 0.6);
+		
+		System.out.println(notaParcial);
 
+		}
 	}
 
 }
