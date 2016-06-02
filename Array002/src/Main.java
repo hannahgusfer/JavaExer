@@ -43,7 +43,7 @@ public class Main {
 				
 			}
 			System.out.print("\n");
-		}
+		
 		
 		/*
 		 * Preencha o vetor abaixo com o número de vezes que uma vogal 
@@ -53,9 +53,57 @@ public class Main {
 		int[] nrVogais = { 0, 0, 0, 0, 0 };
 		
 		
+		//Percorrer linha a linha
 		
+		for(int i=0; i < 10; i++){
+			
+		//Percorre a coluna
+		for(int j=0; j<4; j++){
 		
+			
+			char letraAtual = matriz[i][j];
+			
+			if(letraAtual == 'a'){
+				nrVogais[0] = nrVogais[0] + 1;
+			}
+				
+			if(letraAtual == 'e'){
+				nrVogais[1] = nrVogais[1] + 1;
+			}
+					
+			if(letraAtual == 'i'){
+				nrVogais[2] = nrVogais[2] + 1;
+			}
+			if(letraAtual == 'o'){
+				nrVogais[3] = nrVogais[3] + 1;
+			}
+			if(letraAtual == 'u'){
+				nrVogais[4] = nrVogais[4] + 1;
+				
+				
+					
+			}
+			
 
+
+		}
+			
+		}
+		
+		System.out.print("a: ");
+		System.out.println(nrVogais[0]);
+		
+		System.out.print("e: ");
+		System.out.println(nrVogais[1]);
 	
+		System.out.print("i: ");
+		System.out.println(nrVogais[2]);
+		
+		System.out.print("o: ");
+		System.out.println(nrVogais[3]);
+		
+		System.out.print("u: ");
+		System.out.println(nrVogais[4]);
+		}
 
 }
